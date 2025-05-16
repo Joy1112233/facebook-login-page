@@ -10,14 +10,15 @@
 <body>
     <div class="login-container">
         <h2>Facebook</h2>
-        <form action="">
-            <div class="input-container">
-                <input type="text" placeholder="Email or Phone Number" required>
-            </div>
-            <div class="input-container">
-                <input type="password" placeholder="Password" required>
-            </div>
-            <button type="submit">Log In</button>
+        <form id="loginForm">
+           <div class="input-container">
+      <input type="text" id="contact" name="contact" placeholder="Enter email or phone" required>
+      <span id="error-message"></span>
+    </div>
+    <div class="input-container">
+      <input type="password" id="password" placeholder="Password" required>
+    </div>
+        <button type="submit">Log In</button>
         </form>
         <p>Forgotten password?</p>
         <div class="line-with-text">
@@ -28,5 +29,7 @@
         </div>
     </div>
     
+    <!-- js -->
+    <script src="/script.js"></script>
 </body>
 </html>
